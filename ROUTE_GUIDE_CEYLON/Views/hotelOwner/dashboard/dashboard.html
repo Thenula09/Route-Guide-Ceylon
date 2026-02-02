@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Owner Dashboard - Route Guide Ceylon</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1>Hotel Owner Dashboard</h1>
+                <button class="btn-logout" onclick="logout()">Logout</button>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="welcome-section">
+                <h2>Welcome to Your Dashboard</h2>
+                <p>Manage your hotel properties and bookings</p>
+            </div>
+
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <div class="card-icon">🏨</div>
+                    <h3>My Properties</h3>
+                    <p class="card-number">5</p>
+                    <p class="card-label">Total Hotels</p>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="card-icon">📅</div>
+                    <h3>Bookings</h3>
+                    <p class="card-number">23</p>
+                    <p class="card-label">Active Bookings</p>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="card-icon">💰</div>
+                    <h3>Earnings</h3>
+                    <p class="card-number">Rs. 125,000</p>
+                    <p class="card-label">This Month</p>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="card-icon">⭐</div>
+                    <h3>Rating</h3>
+                    <p class="card-number">4.5/5</p>
+                    <p class="card-label">Average Rating</p>
+                </div>
+            </div>
+
+            <div class="quick-actions">
+                <h3>Quick Actions</h3>
+                <div class="actions-grid">
+                    <button class="action-btn">
+                        <span class="action-icon">➕</span>
+                        Add New Property
+                    </button>
+                    <button class="action-btn">
+                        <span class="action-icon">📋</span>
+                        View Bookings
+                    </button>
+                    <button class="action-btn">
+                        <span class="action-icon">📊</span>
+                        View Reports
+                    </button>
+                    <button class="action-btn">
+                        <span class="action-icon">⚙️</span>
+                        Settings
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Route Guide Ceylon. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function logout() {
+            window.location.href = '../login/login.html';
+        }
+    </script>
+</body>
+</html>
