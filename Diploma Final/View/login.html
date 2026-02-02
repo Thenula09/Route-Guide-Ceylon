@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Guide Ceylon - Sign In</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="login.css">
+
+    <!-- Icons & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="full-page-container">
+
+    <!-- LEFT SIDE -->
+    <div class="left-hero">
+        <div class="hero-overlay">
+            <div class="branding">
+                <img src="ceylon_icon.jpeg" alt="Logo" class="large-logo">
+                <h1 class="main-title">Route Guide Ceylon</h1>
+                <div class="divider-line"></div>
+                <p class="hero-subtext">
+                    Travel is the only purchase that enriches you beyond material wealth.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right-form-area">
+        <div class="login-content">
+
+            <div class="header-box">
+                <i class="fas fa-paper-plane plane-icon"></i>
+                <h2>Welcome</h2>
+                <p>Login with your credentials</p>
+            </div>
+
+            <!-- ✅ ONLY ONE FORM -->
+            <form action="dashboard.html" method="GET">
+
+                <div class="input-field">
+                    <label>Username</label>
+                    <div class="input-wrapper">
+                        <i class="far fa-user"></i>
+                        <input type="text" placeholder="Your username" required>
+                    </div>
+                </div>
+
+                <div class="input-field">
+                    <label>Email Address</label>
+                    <div class="input-wrapper">
+                        <i class="far fa-envelope"></i>
+                        <input type="email" placeholder="example@mail.com" required>
+                    </div>
+                </div>
+
+                <div class="input-field">
+                    <label>Password</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="************" required>
+                    </div>
+                </div>
+
+                <a href="#" class="forgot-btn">Forgot your password?</a>
+
+                <button type="submit" class="main-brown-btn">LOGIN</button>
+            </form>
+
+            <div class="or-separator">
+                <span>OR</span>
+            </div>
+
+            <div class="social-box">
+                <div class="s-icon"><i class="fab fa-google"></i></div>
+                <div class="s-icon"><i class="fab fa-facebook-f"></i></div>
+                <div class="s-icon"><i class="fab fa-apple"></i></div>
+            </div>
+
+            <p class="foot-text">
+                Don't have an account? <a href="#">Register Now</a>
+            </p>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

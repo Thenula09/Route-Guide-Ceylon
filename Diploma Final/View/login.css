@@ -1,0 +1,250 @@
+
+
+
+/* General Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.full-page-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* --- Left Hero Section --- */
+.left-hero {
+    flex: 1.2;
+    background: #fdf5e6; /* ඉල්ලපු විදියට background picture එක අයින් කරලා ලස්සන පැහැයක් දැම්මා */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-overlay {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.branding {
+    text-align: center;
+}
+
+.large-logo {
+    width: 200px;
+    height: auto;
+    background: white;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+}
+
+/* Title එක Brown කළා */
+.main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: #5d4037;
+}
+
+.divider-line {
+    width: 80px;
+    height: 4px;
+    background: #8d6e63;
+    margin: 0 auto 20px;
+    border-radius: 2px;
+}
+
+.hero-subtext {
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 450px;
+    line-height: 1.6;
+    color: #6d4c41;
+}
+
+/* --- Right Form Section --- */
+.right-form-area {
+    flex: 1;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-left: 1px solid #eee;
+}
+
+.login-content {
+    width: 100%;
+    max-width: 420px;
+}
+
+/* Welcome Section එක පහළට කර පිළිවෙල කළා */
+.header-box {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.plane-icon {
+    color: #8d6e63;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.header-box h2 {
+    color: #5d4037;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.header-box p {
+    color: #a1887f;
+    font-size: 14px;
+}
+
+/* Input Fields */
+.input-field {
+    margin-bottom: 18px;
+}
+
+.input-field label {
+    display: block;
+    font-size: 13px;
+    color: #5d4037;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #ece0db;
+    border-radius: 12px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.input-wrapper:focus-within {
+    border-color: #6d4c41;
+}
+
+.input-wrapper i {
+    color: #8d6e63;
+    margin-right: 12px;
+}
+
+.input-wrapper input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+}
+
+.forgot-btn {
+    display: block;
+    text-align: right;
+    font-size: 12px;
+    color: #8d6e63;
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+
+.main-brown-btn {
+    width: 100%; /* බොත්තම සම්පූර්ණ පළලට ගත්තා */
+    padding: 14px;
+    background-color: #6d4c41;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-brown-btn:hover {
+    background-color: #4e342e;
+}
+
+/* Social Icons Section */
+.or-separator {
+    margin: 25px 0;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    line-height: 0.1em;
+}
+
+.or-separator span {
+    background: #fff;
+    padding: 0 10px;
+    color: #bbb;
+    font-size: 12px;
+}
+
+.social-box {
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Icon අතර පරතරය වැඩි කළා */
+    margin-bottom: 25px;
+}
+
+.s-icon {
+    width: 60px; /* Icon Box එක ලොකු කළා */
+    height: 60px;
+    border: 1.5px solid #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* රවුම් හැඩය දුන්නා */
+    color: #5d4037;
+    font-size: 22px; /* Icon එක ලොකු කළා */
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.s-icon:hover {
+    background: #6d4c41;
+    color: white;
+    transform: scale(1.1);
+    border-color: #6d4c41;
+}
+
+.foot-text {
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+}
+
+.foot-text a {
+    color: #6d4c41;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Mobile Setup */
+@media (max-width: 850px) {
+    .full-page-container {
+        flex-direction: column;
+    }
+    .left-hero {
+        padding: 40px 20px;
+    }
+    .main-title {
+        font-size: 30px;
+    }
+}
